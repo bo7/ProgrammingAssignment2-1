@@ -1,10 +1,10 @@
 ## The following two functions
 ## are designed for calculating the inverse of a matrix
-## and storing this in a cache
+## and storing the result in a cache
 ## the purpose is that the recalculation of
 ## an inversed matrix could be time spending
 ## therefore it is possible to check wether the calculation is already done
-## functions do
+## and the desired result can be taken from cache
 
 ## makeCacheMAtrix has getter and setter methods for creating an instance of a matrix
 ## and getter and setter methods for the inversed matrix. 
@@ -13,7 +13,7 @@
 ## with setinverse and get inverse methods the inversed matrix gan be handled
 
 makeCacheMatrix <- function(x = matrix()) {
-        inv <- NULL ## cahced inverse mattrix
+        inv <- NULL ## cached inverse matrix
         set <- function(y) {
                 ## set new matrix on same instance
                 x <<- y
